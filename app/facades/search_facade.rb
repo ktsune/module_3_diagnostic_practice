@@ -15,5 +15,4 @@ class SearchFacade
       Station.new(result)
     end
   end
-  # => move api call logic into a service if there is time
 end
