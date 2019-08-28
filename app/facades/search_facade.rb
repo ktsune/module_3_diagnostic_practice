@@ -11,7 +11,7 @@ class SearchFacade
     result = JSON.parse(res.body, symbolize_names: true)
 
     # => turn json into objects
-    result.map do |result|
+    result[:fuel_stations].map do |result|
       Station.new(result)
     end
   end
